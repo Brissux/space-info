@@ -1,2 +1,14 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<h1 class="text-center">Space info</h1>
+
+<h2>Picture of days</h2>
+<%# mettre l'image en banner p e %>
+<h3><%=  @image_day["title"] %> </h3>
+
+<%= image_tag(@image_day["url"], alt: "picture of day from NASA") %>
+<p><%= @image_day["date"]%>, <%= @image_day["copyright"]%></p>
+
+<p> <%= @image_day["explanation"] %></p>
+
+
+
+<p>Recevoir les infos par newletter</p>
